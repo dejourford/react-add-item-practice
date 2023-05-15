@@ -10,7 +10,10 @@ export default function App () {
   })
   
   const addNewItem = () => {
-    setThingsArray(prevThingsArray => [...prevThingsArray, `Thing ${prevThingsArray.length + 1}`])
+    setThingsArray(prevThingsArray => {
+
+     return [...prevThingsArray, `Thing ${prevThingsArray.length + 1}`]
+    })
   }
 
   return (
